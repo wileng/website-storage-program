@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import time
 
 application = Flask(__name__)
-application.secret_key = 'aoweirWE#(0wv9(#@()#'
+application.secret_key = #SECRET KEY HERE
 dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
 dynamodb_client = boto3.client('dynamodb', region_name='us-west-2')
 s3 = boto3.client('s3', region_name='us-west-2')
