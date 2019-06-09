@@ -1,0 +1,13 @@
+<html>
+	<title>Flash</title>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			<ul>
+				{% for message in messages %}
+				
+				{% endfor %}
+			</ul>
+		{% endif %}
+	{% endwith %}
+	{% block body %}{% endblock %}
+</html>

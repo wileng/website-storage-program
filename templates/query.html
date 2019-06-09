@@ -1,0 +1,10 @@
+<html>
+	<h1>Here's some data about {{ first }} {{ last }}!</h1>
+	<body>
+		{% for attr in person %}
+			<dt>{{ attr}}</dt>
+    		{% endfor %}
+    	</body>
+    	<form action = "/" method = "post">
+    		<p><input type = "submit" name = "button" value = "Return To Main Page" ></p>
+</html>

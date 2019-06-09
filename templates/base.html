@@ -1,0 +1,21 @@
+{% block body %}
+	<title>William's Web App</title>
+	<html>
+		<h1> William Eng's 490 Assignment 4 </h1>
+		<body>
+			<ul class="flashes">
+				{% for message in get_flashed_messages() %}
+					<li>{{ message }}<li>
+				{% endfor %}
+			</ul>
+	      		<form action = "/" method = "post">
+				 <p>Enter Name:</p>
+				 <p>First Name:<input type = "text" name = "FirstName""></p>
+				 <p>Last Name:<input type = "text" name = "LastName"></p>
+				 <p><input type = submit name = "button" value = "Query"  ></p>
+				 <p><input type = submit name = "button" value = "Clear"  ></p>
+				 <p><input type = submit name = "button" value = "Load"  ></p>
+	      		</form>
+	   	</body>
+	</html>
+{% endblock %}
